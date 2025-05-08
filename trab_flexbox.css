@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00253F;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left a {
+    font-family: 'Poppins', sans-serif;
+    color: #941b1b;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+}
+.left p {
+    font-size: 22px;
+    color: #B0BEC5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Evita que os palestrantes quebrem a linha */
+    align-items: stretch; /* Faz os elementos ocuparem toda a altura */
+    height: 100vh; 
+    gap: 5px;
+}
+.speaker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   
+}
+
+.speaker p {
+    margin-top: 7px;
+    font-size: 15px;
+    color: #B0BEC5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;  
+}
+
+.speaker h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.speaker img {
+    width: 100%;
+    height: 100vh; /* Faz a imagem ocupar toda a tela */
+    object-fit: cover; /* Ajusta sem distorção */
+}
